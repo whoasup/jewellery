@@ -1,0 +1,24 @@
+:root {
+  --basic-brown: #a87b62;
+  --basic-white: #ffffff;
+  --bg-beige: #f0eae4;
+  --bg-black: #000000;
+  --filter-brown: rgba(86, 64, 52, 0.7);
+  --text-black: #1d1613;
+}
+
+// fonts
+
+$font-poppins: "Poppins", "Arial", sans-serif;
+$font-roboto-condensed: "Cormorant Garamond", "Times", serif;
+
+// screen width
+
+$small: 320px;
+$medium: 767px;
+$large: 1023px;
+
+// media
+
+$tablet: "only screen and (max-width: #{$large})";
+$mobile: "only screen and (max-width: #{$medium})";

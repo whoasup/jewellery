@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Jewellery, shop">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        /* Mobile layout by default */
+        background-image: url("./img/pixel-glass/page-main-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+      }
+      /* Tablet */
+      @media (min-width: 768px) {
+        html {
+          /* Tablet layout */
+          background-image: url("./img/pixel-glass/page-main-tablet.jpg");
+        }
+      }
+      /* Desktop */
+      @media (min-width: 1024px) {
+        html {
+          /* Desktop layout */
+          background-image: url("./img/pixel-glass/page-main-desktop.jpg");
+        }
+      }
+
+    </style>
+    <link href="./pixel-glass/styles.css" rel="stylesheet">
+    <script src="./pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+  </head>
+  <body>
+    <header class="header">Header</header>
+    <main></main>
+    <footer class="footer">Footer</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
