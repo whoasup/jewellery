@@ -1,0 +1,33 @@
+.sign-up {
+  flex-grow: 1;
+}
+
+.sign-up h2 {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: $font-cormorant;
+  letter-spacing: 0.8px;
+
+  @media #{$mobile} {
+    margin-right: 50px;
+    margin-bottom: 12px;
+  }
+}
+
+.sign-up p {
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--placeholder-grey);
+
+  @media #{$mobile} {
+    margin-right: 50px;
+  }
+}

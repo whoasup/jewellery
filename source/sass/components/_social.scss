@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+}
+
+.social svg {
+  width: 15px;
+
+  @media #{$mobile} {
+    transform: scale(1.5);
+  }
+}
+
+.social p {
+  margin: 0;
+  margin-left: 15px;
+
+  @media #{$mobile} {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+.sign-form__container {
+  display: flex;
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid var(--basic-white);
+}
+
+.sign-form__container input {
+  width: 100%;
+  margin-right: 10px;
+  padding: 5px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: var(--basic-black);
+  border: none;
+
+  &::placeholder {
+    color: var(--placeholder-grey);
+  }
+}
+
+.sign-form__button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+
+  background-color: var(--basic-black);
+  border: none;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.sign-form__button svg {
+  margin-left: 12px;
+}

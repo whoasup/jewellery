@@ -1,9 +1,76 @@
 // footer
 
 .footer {
+  display: flex;
   flex-grow: 0;
+  justify-content: space-between;
+  align-items: start;
+  padding: 90px Max(45px, calc(50% - 585px)) 100px;
 
   color: var(--basic-white);
 
   background-color: var(--bg-black);
+
+  @media #{$tablet} {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 163px;
+  }
+
+  @media #{$mobile} {
+    padding: 50px 15px 60px;
+  }
+}
+
+.footer__sign-up {
+  max-width: 500px;
+  margin-right: auto;
+
+  @media #{$tablet} {
+    width: 100%;
+    max-width: unset;
+    margin-right: 0;
+    margin-bottom: 49px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 47px;
+  }
+}
+
+.footer__helpful {
+  flex-grow: 1;
+  max-width: 357px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: 10px;
+
+  @media #{$tablet} {
+    max-width: 66.7%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.footer__socials {
+  margin-top: 7px;
+  margin-left: 25px;
+
+  @media #{$tablet} {
+    margin-top: 0;
+    margin-right: -12px;
+    margin-left: 10px;
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+    margin: 0;
+  }
 }
