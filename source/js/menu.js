@@ -1,24 +1,4 @@
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
-/*!***************************!*\
-  !*** ./source/js/test.js ***!
-  \***************************/
-`use strict`;
-
-(() => {
-  const a = 10;
-  console.log(a);
-})();
-
-}();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-!function() {
 "use strict";
-/*!***************************!*\
-  !*** ./source/js/menu.js ***!
-  \***************************/
-
 
 (() => {
   const page = document.querySelector(`.page`);
@@ -42,5 +22,3 @@ var __webpack_exports__ = {};
     toggleMenu();
   });
 })();
-
-}();

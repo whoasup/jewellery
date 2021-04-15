@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  align-items: center;
+
+  @media #{$tablet} {
+    padding: 11px 12px 6px 14px;
+
+    background-color: var(--field-white);
+    border-radius: 21px;
+  }
+}
+
+.search label {
+  margin-right: 13px;
+
+  cursor: pointer;
+}
+
+.search input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: inherit;
+  color: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  &::placeholder {
+    color: var(--placeholder-grey);
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+    margin-top: -3px;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}

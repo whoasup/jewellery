@@ -1,0 +1,19 @@
+.cart__icon {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+
+    fill: transparent;
+  }
+}
+
+.cart p {
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.header--brown .cart__icon {
+  color: var(--basic-white);
+}
