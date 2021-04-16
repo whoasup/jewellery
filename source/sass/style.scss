@@ -4,6 +4,7 @@
 @import "global";
 @import "variables";
 @import "fonts";
+@import "../../node_modules/tiny-slider/src/tiny-slider.scss";
 // components
 @import "./components/visually-hidden";
 @import "./components/page";
@@ -20,3 +21,7 @@
 @import "./components/helpful";
 @import "./components/socials";
 @import "./components/social";
+@import "./components/intro";
+@import "./components/new";
+@import "./components/product";
+@import "./components/new-slider";

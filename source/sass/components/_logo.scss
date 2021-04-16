@@ -1,9 +1,19 @@
 .logo {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 
   color: var(--basic-brown);
+
+  grid-template-areas: "logo";
+}
+
+.logo svg {
+  width: 100%;
+  height: auto;
+
+  grid-area: logo;
+  object-fit: cover;
 }
 
 .header--brown .logo {

@@ -4,7 +4,7 @@
   display: flex;
   flex-grow: 0;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   padding: 90px Max(45px, calc(50% - 585px)) 100px;
 
   color: var(--basic-white);

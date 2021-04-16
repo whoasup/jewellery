@@ -5,7 +5,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: flex-start;
   padding: 0 Max(45px, calc(50% - 585px));
   padding-top: 30px;
 
@@ -95,7 +95,7 @@
     position: unset;
 
     order: 1;
-    align-self: start;
+    align-self: flex-start;
 
     font-size: 18px;
     line-height: 23px;
@@ -127,6 +127,8 @@
   padding-left: 10px;
 
   @media #{$tablet} {
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     margin: 0;

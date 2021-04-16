@@ -1,0 +1,84 @@
+.intro {
+  position: relative;
+
+  padding-top: 180px;
+  padding-bottom: 182px;
+
+  font-family: $font-cormorant;
+  text-align: center;
+  color: var(--basic-white);
+
+  background-color: var(--basic-brown);
+  background-image: url("../img/bg-intro-desktop.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-intro-desktop@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--filter-brown);
+  }
+
+  @media #{$tablet} {
+    padding-right: 13px;
+
+    background-image: url("../img/bg-intro-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-tablet@2x.jpg");
+    }
+  }
+
+  @media #{$mobile} {
+    padding-top: 190px;
+    padding-right: 0;
+    padding-bottom: 190px;
+
+    background-image: url("../img/bg-intro-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-mobile@2x.jpg");
+    }
+  }
+}
+
+.intro h2 {
+  position: relative;
+
+  margin: 0;
+}
+
+.intro span:first-child {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media #{$mobile} {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+.intro span:last-child {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 43px;
+
+  @media #{$mobile} {
+    font-size: 34px;
+    line-height: 36px;
+  }
+}
