@@ -1,4 +1,4 @@
-.new-slider {
+.new-slider__list {
   position: relative;
 
   display: flex;
@@ -13,7 +13,7 @@
   }
 }
 
-.new-slider--no-js {
+.new-slider__list--no-js {
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
@@ -28,7 +28,7 @@
   }
 }
 
-.new-slider--no-js .new-slider__item {
+.new-slider__list--no-js .new-slider__item {
   flex-shrink: 0;
   width: 100%;
   max-width: 23.1%;
@@ -40,13 +40,13 @@
   }
 }
 
-.new-slider--no-js .new-slider__item:not(:last-child) {
+.new-slider__list--no-js .new-slider__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.new-slider--no-js ~ .new-slider__controls,
-.new-slider--no-js ~ .new-slider__nav,
-.new-slider--no-js ~ .new-slider__info {
+.new-slider__list--no-js ~ .new-slider__controls,
+.new-slider__list--no-js ~ .new-slider__nav,
+.new-slider__list--no-js ~ .new-slider__info {
   display: none;
 }
 
@@ -124,6 +124,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @media #{$tablet} {
     margin: 0 1px;

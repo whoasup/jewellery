@@ -3,11 +3,11 @@
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
 (() => {
-  const newSlider = document.querySelector(`.new-slider`);
+  const newSlider = document.querySelector(`#new-slider`);
   const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
-  newSlider.classList.remove(`new-slider--no-js`);
+  newSlider.classList.remove(`new-slider__list--no-js`);
   const mainSlider = new tns({
-    container: ".new-slider",
+    container: ".new-slider__list",
     gutter: 30,
     items: 2,
     slideBy: 2,
@@ -39,7 +39,7 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
     newSliderInfoCurrent.textContent = info.navCurrentIndex + 1;
   };
   updateSlidesInfo();
-  mainSlider.events.on(`indexChanged`, () => {
+  mainSlider.events.on(`touchEnd`, () => {
     updateSlidesInfo();
   });
 })();

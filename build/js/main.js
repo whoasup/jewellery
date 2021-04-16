@@ -4006,11 +4006,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const newSlider = document.querySelector(`.new-slider`);
+  const newSlider = document.querySelector(`#new-slider`);
   const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
-  newSlider.classList.remove(`new-slider--no-js`);
+  newSlider.classList.remove(`new-slider__list--no-js`);
   const mainSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
-    container: ".new-slider",
+    container: ".new-slider__list",
     gutter: 30,
     items: 2,
     slideBy: 2,
@@ -4042,7 +4042,7 @@ __webpack_require__.r(__webpack_exports__);
     newSliderInfoCurrent.textContent = info.navCurrentIndex + 1;
   };
   updateSlidesInfo();
-  mainSlider.events.on(`indexChanged`, () => {
+  mainSlider.events.on(`touchEnd`, () => {
     updateSlidesInfo();
   });
 })();
