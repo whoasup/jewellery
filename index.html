@@ -113,8 +113,8 @@
       <section class="new">
         <h2>New in</h2>
         <a href="#" class="new__link">Shop now</a>
-        <div class="new__container">
-          <ul class="new__slider new-slider new-slider--no-js">
+        <div class="new__container new-slider">
+          <ul class="new-slider__list new-slider__list--no-js" id="new-slider">
             <li class="new-slider__item">
               <div class="product">
                 <div class="product__wrapper">
@@ -430,6 +430,70 @@
             <span class="new-slider__current">1</span> of 6
           </div>
         </div>
+      </section>
+      <section class="blog">
+        <h2>Blog</h2>
+        <a href="#" class="blog__link"> Read all </a>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <article class="post">
+              <div class="post__content">
+                <time datetime="2019-09-30">September 30, 2019</time>
+                <h3>How to care for your jewellery</h3>
+                <a href="#">Read article</a>
+              </div>
+              <div class="post__image">
+                <picture>
+                  <!-- webp -->
+                  <source type="image/webp" srcset="./img/blog-care.webp 1x, ./img/blog-care@2x.webp 2x">
+                  <!-- 1x: 285px ; 2x: 570px -->
+                  <img src="./img/blog-care.jpg" srcset="./img/blog-care@2x.jpg 2x" alt="How to care for your jewellery" width="285" height="300">
+                </picture>
+              </div>
+            </article>
+          </li>
+          <li class="blog__item">
+            <article class="post">
+              <div class="post__content">
+                <time datetime="2019-09-23">September 23, 2019</time>
+                <h3>Power of crystals</h3>
+                <a href="#">Read article</a>
+              </div>
+              <div class="post__image post__image--second">
+                <picture>
+                  <!-- webp -->
+                  <source type="image/webp" srcset="
+                      ./img/blog-crystals.webp    1x,
+                      ./img/blog-crystals@2x.webp 2x
+                    ">
+                  <!-- 1x: 285px ; 2x: 570px -->
+                  <img src="./img/blog-crystals.jpg" srcset="./img/blog-crystals@2x.jpg 2x" alt="Power of
+                    crystals" width="285" height="300">
+                </picture>
+              </div>
+            </article>
+          </li>
+          <li class="blog__item">
+            <article class="post post--big">
+              <div class="post__content">
+                <time datetime="2019-09-16">September 16, 2019</time>
+                <h3>AW 19 trends</h3>
+                <a href="#">Read article</a>
+              </div>
+              <div class="post__image">
+                <picture>
+                  <!-- webp -->
+                  <source type="image/webp" srcset="
+                      ./img/blog-trends.webp    1x,
+                      ./img/blog-trends@2x.webp 2x
+                    ">
+                  <!-- 1x: 285px ; 2x: 570px -->
+                  <img src="./img/blog-trends.jpg" srcset="./img/blog-trends@2x.jpg 2x" alt="AW 19 trends" width="285" height="300">
+                </picture>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
