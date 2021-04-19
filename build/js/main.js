@@ -3996,6 +3996,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
+var __webpack_exports__ = {};
 /*!*****************************!*\
   !*** ./source/js/slider.js ***!
   \*****************************/
@@ -4019,7 +4020,7 @@ __webpack_require__.r(__webpack_exports__);
     responsive: {
       320: {
         controls: false,
-        nav: false,
+        nav: true,
         items: 2,
         slideBy: 2,
       },
@@ -4044,6 +4045,29 @@ __webpack_require__.r(__webpack_exports__);
   updateSlidesInfo();
   mainSlider.events.on(`touchEnd`, () => {
     updateSlidesInfo();
+  });
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!********************************!*\
+  !*** ./source/js/accordion.js ***!
+  \********************************/
+
+
+(() => {
+  const accordion = document.querySelector(`.accordion`);
+
+  accordion.classList.add(`accordion--js`);
+
+  accordion.addEventListener(`click`, (e) => {
+    const target = e.target;
+
+    if (target.classList.contains(`accordion__button`)) {
+      target.parentElement.classList.toggle(`accordion__tab--open`);
+    }
   });
 })();
 

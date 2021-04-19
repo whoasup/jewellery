@@ -16,7 +16,7 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
     responsive: {
       320: {
         controls: false,
-        nav: false,
+        nav: true,
         items: 2,
         slideBy: 2,
       },

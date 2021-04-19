@@ -6,6 +6,7 @@ module.exports = {
     `./source/js/test.js`,
     `./source/js/menu.js`,
     `./source/js/slider.js`,
+    `./source/js/accordion.js`,
   ],
   output: {
     filename: `main.js`,
