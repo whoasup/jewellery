@@ -2,7 +2,9 @@
   position: relative;
 
   padding-top: 180px;
+  padding-right: 15px;
   padding-bottom: 182px;
+  padding-left: 15px;
 
   font-family: $font-cormorant;
   text-align: center;
@@ -30,7 +32,7 @@
   }
 
   @media #{$tablet} {
-    padding-right: 13px;
+    padding-right: 30px;
 
     background-image: url("../img/bg-intro-tablet.jpg");
 
@@ -41,13 +43,45 @@
 
   @media #{$mobile} {
     padding-top: 190px;
-    padding-right: 0;
+    padding-right: 15px;
     padding-bottom: 190px;
 
     background-image: url("../img/bg-intro-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-intro-mobile@2x.jpg");
+    }
+  }
+}
+
+.intro--catalog {
+  padding-top: 90px;
+  padding-bottom: 95px;
+
+  background-image: url("../img/bg-intro-catalog.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-intro-catalog@2x.jpg");
+  }
+
+  @media #{$tablet} {
+    padding-top: 92px;
+    padding-left: 30px;
+
+    background-image: url("../img/bg-intro-catalog-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-catalog-tablet@2x.jpg");
+    }
+  }
+
+  @media #{$mobile} {
+    padding: 80px 15px;
+
+    background-image: url("../img/bg-intro-catalog-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-catalog-mobile@2x.jpg");
     }
   }
 }
@@ -71,6 +105,12 @@
   }
 }
 
+.intro--catalog span:first-child {
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: normal;
+}
+
 .intro span:last-child {
   font-style: italic;
   font-weight: 700;
@@ -81,4 +121,9 @@
     font-size: 34px;
     line-height: 36px;
   }
+}
+
+.intro--catalog span:last-child {
+  font-size: 22px;
+  line-height: 20px;
 }

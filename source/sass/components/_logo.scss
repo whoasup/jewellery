@@ -6,6 +6,15 @@
   color: var(--basic-brown);
 
   grid-template-areas: "logo";
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .logo svg {
