@@ -3996,6 +3996,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
+var __webpack_exports__ = {};
 /*!*****************************!*\
   !*** ./source/js/slider.js ***!
   \*****************************/
@@ -4007,43 +4008,124 @@ __webpack_require__.r(__webpack_exports__);
 
 (() => {
   const newSlider = document.querySelector(`#new-slider`);
-  const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
-  newSlider.classList.remove(`new-slider__list--no-js`);
-  const mainSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
-    container: ".new-slider__list",
-    gutter: 30,
-    items: 2,
-    slideBy: 2,
-    controlsContainer: ".new-slider__controls",
-    navContainer: ".new-slider__nav",
-    responsive: {
-      320: {
-        controls: false,
-        nav: false,
-        items: 2,
-        slideBy: 2,
+
+  if (newSlider) {
+    const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
+    newSlider.classList.remove(`new-slider__list--no-js`);
+    const mainSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
+      container: ".new-slider__list",
+      gutter: 30,
+      items: 2,
+      slideBy: 2,
+      controlsContainer: ".new-slider__controls",
+      navContainer: ".new-slider__nav",
+      responsive: {
+        320: {
+          controls: false,
+          nav: true,
+          items: 2,
+          slideBy: 2,
+        },
+        768: {
+          controls: true,
+          nav: true,
+          items: 2,
+          slideBy: 2,
+        },
+        1024: {
+          controls: true,
+          nav: true,
+          items: 4,
+          slideBy: 4,
+        },
       },
-      768: {
-        controls: true,
-        nav: true,
-        items: 2,
-        slideBy: 2,
-      },
-      1024: {
-        controls: true,
-        nav: true,
-        items: 4,
-        slideBy: 4,
-      },
-    },
-  });
-  const updateSlidesInfo = () => {
-    const info = mainSlider.getInfo();
-    newSliderInfoCurrent.textContent = info.navCurrentIndex + 1;
-  };
-  updateSlidesInfo();
-  mainSlider.events.on(`touchEnd`, () => {
+    });
+    const updateSlidesInfo = () => {
+      const info = mainSlider.getInfo();
+      newSliderInfoCurrent.textContent = info.navCurrentIndex + 1;
+    };
     updateSlidesInfo();
+    mainSlider.events.on(`touchEnd`, () => {
+      updateSlidesInfo();
+    });
+  }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!********************************!*\
+  !*** ./source/js/accordion.js ***!
+  \********************************/
+
+
+(() => {
+  const accordion = document.querySelector(`.accordion`);
+  if (accordion) {
+    accordion.classList.add(`accordion--js`);
+    accordion.addEventListener(`click`, (e) => {
+      const target = e.target;
+      if (target.classList.contains(`accordion__button`)) {
+        target.parentElement.classList.toggle(`accordion__tab--open`);
+      }
+    });
+  }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!****************************!*\
+  !*** ./source/js/range.js ***!
+  \****************************/
+
+
+(() => {
+  const range = document.querySelector(`.range`);
+  if (range) {
+    const onRangeInput = (e) => {
+      let target = e.target;
+      target.parentNode.style.setProperty(`--${target.id}`, +target.value);
+    };
+
+    range.addEventListener(`input`, onRangeInput, false);
+  }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!****************************!*\
+  !*** ./source/js/popup.js ***!
+  \****************************/
+
+
+(() => {
+  const popup = document.querySelector(`.popup`);
+  const popupOpenButton = document.querySelector(`[data-control="popup-open"]`);
+  const popupCloseButton = document.querySelector(
+    `[data-control="popup-close"]`
+  );
+  const overlay = document.querySelector(`.overlay`);
+
+  const openPopup = () => {
+    popup.classList.add(`popup--open`);
+    overlay.classList.remove(`overlay--close`);
+  };
+
+  const closePopup = () => {
+    popup.classList.remove(`popup--open`);
+    overlay.classList.add(`overlay--close`);
+  };
+
+  popupOpenButton.addEventListener(`click`, () => {
+    openPopup();
+  });
+  popupCloseButton.addEventListener(`click`, () => {
+    closePopup();
   });
 })();
 
