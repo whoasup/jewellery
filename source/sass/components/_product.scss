@@ -27,6 +27,14 @@
   background-color: var(--basic-white);
 }
 
+.product--catalog .product__image {
+  padding-top: 100%;
+
+  @media #{$mobile} {
+    padding-top: 104%;
+  }
+}
+
 .product__wrapper picture,
 .product__wrapper img {
   position: absolute;
@@ -54,7 +62,7 @@
 
 .product__description {
   width: 100%;
-  padding: 22px 10px 23px;
+  padding: 22px 0 23px;
 
   @media #{$mobile} {
     padding-top: 15px;

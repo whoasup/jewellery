@@ -1,0 +1,20 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+
+  display: block;
+
+  background: rgba(29, 22, 19, 0.25);
+
+  &--close {
+    display: none;
+  }
+
+  &--white {
+    background-color: var(--basic-white);
+  }
+}

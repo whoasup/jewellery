@@ -4062,18 +4062,71 @@ __webpack_require__.r(__webpack_exports__);
 
 (() => {
   const accordion = document.querySelector(`.accordion`);
-
   if (accordion) {
     accordion.classList.add(`accordion--js`);
-
     accordion.addEventListener(`click`, (e) => {
       const target = e.target;
-
       if (target.classList.contains(`accordion__button`)) {
         target.parentElement.classList.toggle(`accordion__tab--open`);
       }
     });
   }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!****************************!*\
+  !*** ./source/js/range.js ***!
+  \****************************/
+
+
+(() => {
+  const range = document.querySelector(`.range`);
+  if (range) {
+    const onRangeInput = (e) => {
+      let target = e.target;
+      target.parentNode.style.setProperty(`--${target.id}`, +target.value);
+    };
+
+    range.addEventListener(`input`, onRangeInput, false);
+  }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!****************************!*\
+  !*** ./source/js/popup.js ***!
+  \****************************/
+
+
+(() => {
+  const popup = document.querySelector(`.popup`);
+  const popupOpenButton = document.querySelector(`[data-control="popup-open"]`);
+  const popupCloseButton = document.querySelector(
+    `[data-control="popup-close"]`
+  );
+  const overlay = document.querySelector(`.overlay`);
+
+  const openPopup = () => {
+    popup.classList.add(`popup--open`);
+    overlay.classList.remove(`overlay--close`);
+  };
+
+  const closePopup = () => {
+    popup.classList.remove(`popup--open`);
+    overlay.classList.add(`overlay--close`);
+  };
+
+  popupOpenButton.addEventListener(`click`, () => {
+    openPopup();
+  });
+  popupCloseButton.addEventListener(`click`, () => {
+    closePopup();
+  });
 })();
 
 }();

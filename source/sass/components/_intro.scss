@@ -56,9 +56,10 @@
 
 .intro--catalog {
   padding-top: 90px;
-  padding-bottom: 95px;
+  padding-bottom: 100px;
 
   background-image: url("../img/bg-intro-catalog.jpg");
+  box-shadow: unset;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-intro-catalog@2x.jpg");

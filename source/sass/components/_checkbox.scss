@@ -1,0 +1,47 @@
+.checkbox {
+  display: flex;
+
+  color: var(--basic-black);
+}
+
+.checkbox input {
+  position: relative;
+  z-index: 1;
+
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
+
+  border: 1px solid var(--basic-brown);
+  cursor: pointer;
+
+  appearance: none;
+
+  @media #{$tablet} {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.checkbox input:checked {
+  background-color: var(--basic-brown);
+}
+
+.checkbox label {
+  position: relative;
+  z-index: 1;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  cursor: pointer;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

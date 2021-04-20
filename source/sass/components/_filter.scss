@@ -1,0 +1,297 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--basic-white);
+}
+
+.filter__container {
+  border: 1px solid var(--basic-brown);
+}
+
+.filter__container:last-of-type {
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 30px;
+  }
+}
+
+.filter__container:not(:first-child) {
+  border-top: none;
+}
+
+.filter fieldset {
+  display: block;
+  margin: 0;
+  padding: 24px 25px 0;
+
+  border: none;
+
+  @media #{$tablet} {
+    padding-right: 88px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+
+  @media #{$mobile} {
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+}
+
+.filter h4 {
+  margin: 0;
+  margin-top: 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  @media #{$tablet} {
+    margin-top: 34px;
+
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  @media #{$mobile} {
+    margin-top: 25px;
+  }
+}
+
+.filter__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+
+  list-style: none;
+
+  @media #{$tablet} {
+    padding-bottom: 28px;
+  }
+
+  @media #{$mobile} {
+    padding-bottom: 25px;
+  }
+}
+
+.filter__item:not(:first-child) {
+  margin-top: 12px;
+
+  @media #{$tablet} {
+    margin-top: 17px;
+  }
+}
+
+.filter__range {
+  @media #{$tablet} {
+    padding-left: 10px;
+  }
+
+  @media #{$mobile} {
+    margin-left: -10px;
+    padding-left: 0;
+  }
+}
+
+.filter__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-transform: capitalize;
+
+  background-color: var(--basic-brown);
+  border: 1px solid var(--basic-brown);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: var(--basic-white);
+
+    background-color: var(--basic-black);
+  }
+
+  @media #{$tablet} {
+    width: calc(100% - 80px);
+    margin: 0 40px;
+  }
+
+  @media #{$mobile} {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+}
+
+.filter__button--white {
+  margin-top: 25px;
+
+  color: var(--basic-black);
+
+  background-color: var(--basic-white);
+
+  &:active {
+    color: var(--basic-white);
+
+    background-color: var(--basic-brown);
+  }
+
+  @media #{$tablet} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$mobile} {
+    margin-top: 21px;
+    margin-bottom: 30px;
+  }
+}
+
+.filter__accordion-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-right: 22px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media #{$tablet} {
+    padding-top: 40px;
+    padding-right: 43px;
+  }
+
+  @media #{$mobile} {
+    padding-top: 30px;
+    padding-right: 21px;
+  }
+}
+
+.filter__accordion-button svg {
+  color: var(--basic-brown);
+
+  pointer-events: none;
+
+  fill: transparent;
+
+  @media #{$tablet} {
+    transform: scale(1.4);
+  }
+}
+
+.accordion--js .filter__container {
+  position: relative;
+}
+
+.accordion--js .filter__accordion-button {
+  display: flex;
+}
+
+.accordion--js .filter__content {
+  display: none;
+}
+
+.accordion__tab--open .filter__content {
+  display: block;
+}
+
+.js .filter {
+  @media #{$tablet} {
+    position: absolute;
+    top: 27px;
+    left: -19px;
+    z-index: 9999;
+
+    display: none;
+    width: 100%;
+    max-width: 442px;
+
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+  }
+
+  @media #{$mobile} {
+    top: 76px;
+    left: 25px;
+
+    width: calc(100% - 50px);
+  }
+}
+
+.js .filter__container {
+  @media #{$tablet} {
+    border-right: none;
+    border-left: none;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+}
+
+.filter__close {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+
+  color: var(--basic-white);
+
+  background-color: var(--basic-black);
+  border: none;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: var(--basic-black);
+
+    background-color: var(--basic-white);
+  }
+}
+
+.js .filter__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+
+  @media #{$tablet} {
+    right: 6px;
+  }
+}
