@@ -4008,6 +4008,12 @@ __webpack_require__.r(__webpack_exports__);
 
 (() => {
   const newSlider = document.querySelector(`#new-slider`);
+  const detailSlider = document.querySelector(`#detail-slider`);
+
+  const updateSlidesInfo = (slider, infoElement) => {
+    const info = slider.getInfo();
+    infoElement.textContent = info.navCurrentIndex + 1;
+  };
 
   if (newSlider) {
     const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
@@ -4040,13 +4046,34 @@ __webpack_require__.r(__webpack_exports__);
         },
       },
     });
-    const updateSlidesInfo = () => {
-      const info = mainSlider.getInfo();
-      newSliderInfoCurrent.textContent = info.navCurrentIndex + 1;
-    };
-    updateSlidesInfo();
+
+    updateSlidesInfo(mainSlider, newSliderInfoCurrent);
     mainSlider.events.on(`touchEnd`, () => {
-      updateSlidesInfo();
+      updateSlidesInfo(mainSlider, newSliderInfoCurrent);
+    });
+  }
+
+  if (detailSlider) {
+    const cardSliderInfoCurrent = document.querySelector(`.detail__current`);
+    detailSlider.classList.remove(`detail__gallery--no-js`);
+    const cardSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
+      container: ".detail__gallery",
+      disable: true,
+      controls: false,
+      responsive: {
+        320: {
+          disable: false,
+          gutter: 20,
+        },
+        768: {
+          disable: true,
+        },
+      },
+    });
+
+    updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
+    cardSlider.events.on(`touchEnd`, () => {
+      updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
     });
   }
 })();
