@@ -56,7 +56,7 @@
 
 .intro--catalog {
   padding-top: 90px;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
 
   background-image: url("../img/bg-intro-catalog.jpg");
   box-shadow: unset;
@@ -67,6 +67,7 @@
 
   @media #{$tablet} {
     padding-top: 92px;
+    padding-bottom: 92px;
     padding-left: 30px;
 
     background-image: url("../img/bg-intro-catalog-tablet.jpg");
@@ -78,6 +79,7 @@
 
   @media #{$mobile} {
     padding: 80px 15px;
+    padding-bottom: 78px;
 
     background-image: url("../img/bg-intro-catalog-mobile.jpg");
 
@@ -125,6 +127,11 @@
 }
 
 .intro--catalog span:last-child {
+  font-weight: 500;
   font-size: 22px;
-  line-height: 20px;
+  line-height: 33px;
+
+  @media #{$mobile} {
+    line-height: 29px;
+  }
 }
