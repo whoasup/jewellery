@@ -1,3 +1,4 @@
+/******/ "use strict";
 /******/ var __webpack_modules__ = ({
 
 /***/ "./node_modules/tiny-slider/src/helpers/addCSSRule.js":
@@ -6,7 +7,6 @@
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "addCSSRule": function() { return /* binding */ addCSSRule; }
@@ -30,7 +30,6 @@ function addCSSRule(sheet, selector, rules, index) {
   \**********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "addClass": function() { return /* binding */ addClass; }
@@ -55,7 +54,6 @@ var addClass = _hasClass_js__WEBPACK_IMPORTED_MODULE_0__.classListSupport ?
   \***********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "addEvents": function() { return /* binding */ addEvents; }
@@ -78,7 +76,6 @@ function addEvents(el, obj, preventScrolling) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "arrayFromNodeList": function() { return /* binding */ arrayFromNodeList; }
@@ -99,7 +96,6 @@ function arrayFromNodeList (nl) {
   \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "caf": function() { return /* binding */ caf; }
@@ -119,7 +115,6 @@ var caf = win.cancelAnimationFrame
   \******************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "calc": function() { return /* binding */ calc; }
@@ -169,7 +164,6 @@ function calc() {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "checkStorageValue": function() { return /* binding */ checkStorageValue; }
@@ -186,7 +180,6 @@ function checkStorageValue (value) {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "classListSupport": function() { return /* binding */ classListSupport; }
@@ -201,7 +194,6 @@ var classListSupport = 'classList' in document.createElement('_');
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createStyleSheet": function() { return /* binding */ createStyleSheet; }
@@ -237,7 +229,6 @@ function createStyleSheet (media, nonce) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "docElement": function() { return /* binding */ docElement; }
@@ -252,7 +243,6 @@ var docElement = document.documentElement;
   \********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Events": function() { return /* binding */ Events; }
@@ -293,7 +283,6 @@ function Events() {
   \********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "extend": function() { return /* binding */ extend; }
@@ -328,7 +317,6 @@ function extend() {
   \*********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "forEach": function() { return /* binding */ forEach; }
@@ -348,7 +336,6 @@ function forEach (arr, callback, scope) {
   \*********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getAttr": function() { return /* binding */ getAttr; }
@@ -365,7 +352,6 @@ function getAttr(el, attr) {
   \*********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getBody": function() { return /* binding */ getBody; }
@@ -390,7 +376,6 @@ function getBody () {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getCssRulesLength": function() { return /* binding */ getCssRulesLength; }
@@ -408,7 +393,6 @@ function getCssRulesLength(sheet) {
   \****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getEndProperty": function() { return /* binding */ getEndProperty; }
@@ -437,7 +421,6 @@ function getEndProperty(propIn, propOut) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getSlideId": function() { return /* binding */ getSlideId; }
@@ -457,7 +440,6 @@ function getSlideId() {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getTouchDirection": function() { return /* binding */ getTouchDirection; }
@@ -483,7 +465,6 @@ function getTouchDirection(angle, range) {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "has3DTransforms": function() { return /* binding */ has3DTransforms; }
@@ -528,7 +509,6 @@ function has3DTransforms(tf){
   \*********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "hasAttr": function() { return /* binding */ hasAttr; }
@@ -545,7 +525,6 @@ function hasAttr(el, attr) {
   \**********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "classListSupport": function() { return /* reexport safe */ _classListSupport_js__WEBPACK_IMPORTED_MODULE_0__.classListSupport; },
@@ -568,7 +547,6 @@ var hasClass = _classListSupport_js__WEBPACK_IMPORTED_MODULE_0__.classListSuppor
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "hideElement": function() { return /* binding */ hideElement; }
@@ -585,7 +563,6 @@ function hideElement(el, forceHide) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isNodeList": function() { return /* binding */ isNodeList; }
@@ -603,7 +580,6 @@ function isNodeList(el) {
   \***********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isVisible": function() { return /* binding */ isVisible; }
@@ -620,7 +596,6 @@ function isVisible(el) {
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "jsTransform": function() { return /* binding */ jsTransform; }
@@ -654,7 +629,6 @@ function jsTransform(element, attr, prefix, postfix, to, duration, callback) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "mediaquerySupport": function() { return /* binding */ mediaquerySupport; }
@@ -707,7 +681,6 @@ function mediaquerySupport () {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "passiveOption": function() { return /* binding */ passiveOption; }
@@ -732,7 +705,6 @@ var passiveOption = supportsPassive ? { passive: true } : false;
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "percentageLayout": function() { return /* binding */ percentageLayout; }
@@ -784,7 +756,6 @@ function percentageLayout() {
   \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "raf": function() { return /* binding */ raf; }
@@ -806,7 +777,6 @@ var raf = win.requestAnimationFrame
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "removeAttrs": function() { return /* binding */ removeAttrs; }
@@ -834,7 +804,6 @@ function removeAttrs(els, attrs) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "removeCSSRule": function() { return /* binding */ removeCSSRule; }
@@ -858,7 +827,6 @@ function removeCSSRule(sheet, index) {
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "removeClass": function() { return /* binding */ removeClass; }
@@ -883,7 +851,6 @@ var removeClass = _hasClass_js__WEBPACK_IMPORTED_MODULE_0__.classListSupport ?
   \**************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "removeEvents": function() { return /* binding */ removeEvents; }
@@ -906,7 +873,6 @@ function removeEvents(el, obj) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "resetFakeBody": function() { return /* binding */ resetFakeBody; }
@@ -932,7 +898,6 @@ function resetFakeBody (body, docOverflow) {
   \**********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "setAttrs": function() { return /* binding */ setAttrs; }
@@ -959,7 +924,6 @@ function setAttrs(els, attrs) {
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "setFakeBody": function() { return /* binding */ setFakeBody; }
@@ -989,7 +953,6 @@ function setFakeBody (body) {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "setLocalStorage": function() { return /* binding */ setLocalStorage; }
@@ -1009,7 +972,6 @@ function setLocalStorage(storage, key, value, access) {
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "showElement": function() { return /* binding */ showElement; }
@@ -1026,7 +988,6 @@ function showElement(el, forceHide) {
   \**********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "toDegree": function() { return /* binding */ toDegree; }
@@ -1043,7 +1004,6 @@ function toDegree (y, x) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "whichProperty": function() { return /* binding */ whichProperty; }
@@ -1082,7 +1042,6 @@ function whichProperty(props){
   \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "tns": function() { return /* binding */ tns; }
@@ -3951,26 +3910,13 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
 /*!***************************!*\
-  !*** ./source/js/test.js ***!
-  \***************************/
-`use strict`;
-
-(() => {
-  const a = 10;
-  console.log(a);
-})();
-
-}();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-!function() {
-"use strict";
-/*!***************************!*\
   !*** ./source/js/menu.js ***!
   \***************************/
 
 
 (() => {
   const page = document.querySelector(`.page`);
+  const body = document.querySelector(`body`);
   const burger = document.querySelector(`.burger`);
   const header = document.querySelector(`.header`);
   let isMenuShow = header.classList.contains(`header--brown`);
@@ -3980,9 +3926,13 @@ var __webpack_exports__ = {};
     if (!isMenuShow) {
       burger.classList.add(`burger--white`);
       header.classList.add(`header--brown`);
+      header.classList.add(`header--show`);
+      body.classList.add(`no-scroll`);
     } else {
       burger.classList.remove(`burger--white`);
       header.classList.remove(`header--brown`);
+      header.classList.remove(`header--show`);
+      body.classList.remove(`no-scroll`);
     }
     isMenuShow = !isMenuShow;
   };
@@ -3993,9 +3943,8 @@ var __webpack_exports__ = {};
 })();
 
 }();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
-"use strict";
 var __webpack_exports__ = {};
 /*!*****************************!*\
   !*** ./source/js/slider.js ***!
@@ -4079,9 +4028,8 @@ __webpack_require__.r(__webpack_exports__);
 })();
 
 }();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
-"use strict";
 /*!********************************!*\
   !*** ./source/js/accordion.js ***!
   \********************************/
@@ -4090,20 +4038,31 @@ __webpack_require__.r(__webpack_exports__);
 (() => {
   const accordion = document.querySelector(`.accordion`);
   if (accordion) {
+    const isAccordionFaq = accordion.classList.contains(`faq__list`);
+    let openedTab;
+
+    const closeTab = () => {
+      openedTab.classList.remove(`accordion__tab--open`);
+      openedTab = null;
+    };
+
     accordion.classList.add(`accordion--js`);
     accordion.addEventListener(`click`, (e) => {
       const target = e.target;
       if (target.classList.contains(`accordion__button`)) {
+        if (isAccordionFaq && openedTab && target.parentElement !== openedTab) {
+          closeTab();
+        }
         target.parentElement.classList.toggle(`accordion__tab--open`);
+        openedTab = target.parentElement;
       }
     });
   }
 })();
 
 }();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
-"use strict";
 /*!****************************!*\
   !*** ./source/js/range.js ***!
   \****************************/
@@ -4122,38 +4081,95 @@ __webpack_require__.r(__webpack_exports__);
 })();
 
 }();
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
-"use strict";
 /*!****************************!*\
   !*** ./source/js/popup.js ***!
   \****************************/
 
 
 (() => {
-  const popup = document.querySelector(`.popup`);
-  const popupOpenButton = document.querySelector(`[data-control="popup-open"]`);
-  const popupCloseButton = document.querySelector(
-    `[data-control="popup-close"]`
-  );
-  const overlay = document.querySelector(`.overlay`);
+  const body = document.querySelector(`body`);
 
-  const openPopup = () => {
-    popup.classList.add(`popup--open`);
-    overlay.classList.remove(`overlay--close`);
+  const emailInput = document.querySelector(`#login-email`);
+  const modalLinks = Array.from(document.querySelectorAll(`[data-control="modal"]`));
+  let openedModal;
+
+  const openModal = (modal) => {
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+
+    if (modal) {
+      modal.classList.add(`modal--open`);
+      body.classList.add(`no-scroll`);
+
+      openedModal = modal;
+      document.addEventListener(`keydown`, modalCloseHandler);
+      document.addEventListener(`click`, modalCloseHandler);
+      if (modal.id === `modal-login`) {
+        emailInput.focus();
+      }
+    }
   };
 
-  const closePopup = () => {
-    popup.classList.remove(`popup--open`);
-    overlay.classList.add(`overlay--close`);
+  const closeModal = (modal) => {
+    modal.classList.remove(`modal--open`);
+    body.classList.remove(`no-scroll`);
+
+    document.removeEventListener(`keydown`, modalCloseHandler);
+    document.removeEventListener(`click`, modalCloseHandler);
   };
 
-  popupOpenButton.addEventListener(`click`, () => {
-    openPopup();
+  const modalCloseHandler = (e) => {
+    const target = e.target;
+    if (
+      target.classList.contains(`modal`) ||
+      target.classList.contains(`modal__close`) ||
+      e.key === `Escape`
+    ) {
+      closeModal(openedModal);
+      openedModal = null;
+    }
+  };
+
+  modalLinks.forEach((link) => {
+    const modalClass = link.dataset.open;
+    const modalElement = document.querySelector(`#${modalClass}`);
+    link.addEventListener(`click`, (e) => {
+      e.preventDefault();
+
+      openModal(modalElement);
+    });
   });
-  popupCloseButton.addEventListener(`click`, () => {
-    closePopup();
-  });
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!***************************!*\
+  !*** ./source/js/form.js ***!
+  \***************************/
+
+
+(() => {
+  const loginForm = document.querySelector(`#login-form`);
+  const emailInput = loginForm.querySelector(`#login-email`);
+
+  let isStorageSupport = true;
+  try {
+    localStorage.setItem(`__test`, `data`);
+  } catch (error) {
+    isStorageSupport = false;
+  }
+
+  if (loginForm && emailInput) {
+    loginForm.addEventListener(`submit`, () => {
+      if (isStorageSupport) {
+        localStorage.setItem(`email`, emailInput.value);
+      }
+    });
+  }
 })();
 
 }();
