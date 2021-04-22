@@ -1,0 +1,78 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter input {
+  width: 30px;
+  margin: 3px 0;
+  padding-left: 10px;
+
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  background-color: transparent;
+  border: none;
+
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    margin: 0;
+
+    appearance: none;
+  }
+}
+
+.counter button {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 14px;
+    height: 2px;
+
+    background-color: var(--placeholder-grey);
+    transform: translate(-50%, -50%);
+  }
+
+  &:focus,
+  &:hover {
+    outline: 1px solid var(--basic-black);
+
+    &::before,
+    &::after {
+      background-color: var(--basic-black);
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: var(--basic-black);
+      opacity: 0.3;
+    }
+  }
+}
+
+.counter .counter__add {
+  order: -1;
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

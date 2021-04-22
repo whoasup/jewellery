@@ -163,9 +163,9 @@
   display: flex;
 
   @media #{$tablet} {
-    padding: 0 Max(45px, calc(50% - 585px));
-    padding-top: 10px;
-    padding-bottom: 80px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 45px;
 
     color: var(--basic-white);
 
@@ -173,6 +173,28 @@
   }
 
   @media #{$mobile} {
-    padding: 10px 15px 50px;
+    padding: 30px 0 30px;
   }
+}
+
+.header--show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  overflow: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.header--show .header__navigation {
+  position: unset;
 }

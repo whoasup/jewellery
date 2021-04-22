@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Jewellery, login">
+    <title>Jewellery, login</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo logo">
+        <p class="visually-hidden">Jewellery shop</p>
+        <svg width="66" height="66">
+          <use href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <nav class="header__navigation" id="menu">
+        <form action="#" class="header__search" method="POST">
+          <div class="search">
+            <label for="search">
+              <svg width="14" height="14">
+                <use href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+              <span class="visually-hidden">Search on the site</span></label>
+            <input type="text" id="search" placeholder="Type here to search">
+          </div>
+        </form>
+
+        <a href="./login.html" class="header__login">Login</a>
+
+        <ul class="categories">
+          <li class="categories__item">
+            <a href="#" class="categories__link">What’s new</a>
+          </li>
+          <li class="categories__item">
+            <a href="./catalog.html#chokers" class="categories__link">Chokers</a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">Necklaces</a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">Rings</a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">Earrings</a>
+          </li>
+        </ul>
+        <ul class="extra">
+          <li class="extra__item">
+            <a href="#" class="extra__link">About CH</a>
+          </li>
+          <li class="extra__item">
+            <a href="#" class="extra__link">Stores & Hours</a>
+          </li>
+          <li class="extra__item">
+            <a href="#" class="extra__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="header__cart cart">
+        <svg class="cart__icon" width="20" height="18">
+          <use href="img/sprite_auto.svg#icon-cart"></use>
+        </svg>
+        <p>Cart <span>0</span></p>
+      </a>
+
+      <button class="header__burger burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <svg width="25" height="18">
+          <use href="./img/sprite_auto.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Login page of Jewellery shop</h1>
+      <section class="login">
+        <h2>Log in</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="login__container">
+            <div class="login__field field">
+              <input type="email" name="login-email" id="login-email" placeholder="Your E-mail" required="">
+              <label class="visually-hidden" for="login-email">
+                Enter your E-mail
+              </label>
+            </div>
+            <div class="login__field field">
+              <input type="password" name="login-password" id="login-password" placeholder="Password" required="">
+              <label class="visually-hidden" for="login-password">
+                Enter your password
+              </label>
+              <a href="#">Forgot your password?</a>
+            </div>
+
+            <button class="login__button" type="submit">Log in</button>
+
+            <p class="login__help">
+              <span>Don’t have an account?</span>
+              <a href="#">Sign up</a>
+            </p>
+          </div>
+        </form>
+        <button class="login__close" type="button">
+          <span class="visually-hidden">Close login popup</span>
+          <svg width="14" height="14">
+            <use href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__sign-up sign-up">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form action="#" class="sign-up__form sign-form" method="POST">
+          <div class="sign-form__container">
+            <label for="sign-up">
+              <span class="visually-hidden">Enter your email</span></label>
+            <input type="email" id="sign-up" placeholder="Your E-mail">
+            <button class="sign-form__button" type="submit">
+              <span>Sign Up</span><svg width="30" height="11" aria-hidden="true">
+                <use href="./img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer__helpful helpful">
+        <h2 class="visually-hidden">Helpful links</h2>
+        <ul class="helpful__list">
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Ordering & Payment</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Terms & Conditions</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Returns & Exchanges</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Delivery</a>
+          </li>
+        </ul>
+        <ul class="helpful__list">
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">About CH</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Stores & Hours</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Jobs</a>
+          </li>
+          <li class="helpful__item">
+            <a href="#" class="helpful__link">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__socials socials">
+        <h2 class="visually-hidden">
+          You can find us in the following social networks
+        </h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <div class="social">
+                <svg width="8" height="15">
+                  <use href="./img/sprite_auto.svg#icon-fb"></use>
+                </svg>
+                <p>Facebook</p>
+              </div>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <div class="social">
+                <svg width="15" height="15">
+                  <use href="./img/sprite_auto.svg#icon-inst"></use>
+                </svg>
+                <p>Instagram</p>
+              </div>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <div class="social">
+                <svg width="16" height="15">
+                  <use href="./img/sprite_auto.svg#icon-pint"></use>
+                </svg>
+                <p>Pinterest</p>
+              </div>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <div class="social">
+                <svg width="15" height="13">
+                  <use href="./img/sprite_auto.svg#icon-tw"></use>
+                </svg>
+                <p>Twitter</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

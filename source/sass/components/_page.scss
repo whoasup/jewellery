@@ -9,10 +9,9 @@
 }
 
 .page body {
-  position: relative;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-width: $small;
   height: 100%;
 }

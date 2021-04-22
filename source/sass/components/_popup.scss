@@ -1,3 +1,28 @@
-.js .popup--open {
-  display: block;
+.js .popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+
+  background: var(--basic-white);
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &--open {
+    display: flex;
+  }
 }

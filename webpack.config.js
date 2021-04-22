@@ -3,12 +3,12 @@ const path = require("path");
 module.exports = {
   mode: `development`,
   entry: [
-    `./source/js/test.js`,
     `./source/js/menu.js`,
     `./source/js/slider.js`,
     `./source/js/accordion.js`,
     `./source/js/range.js`,
     `./source/js/popup.js`,
+    `./source/js/form.js`,
   ],
   output: {
     filename: `main.js`,

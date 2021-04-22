@@ -232,22 +232,15 @@
 
 .js .filter {
   @media #{$tablet} {
-    position: absolute;
-    top: 27px;
-    left: -19px;
-    z-index: 9999;
+    position: relative;
 
-    display: none;
+    display: block;
     width: 100%;
     max-width: 442px;
-
-    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+    margin-right: auto;
   }
 
   @media #{$mobile} {
-    top: 76px;
-    left: 25px;
-
     width: calc(100% - 50px);
   }
 }
@@ -299,6 +292,10 @@
   }
 }
 
-.popup--open .filter__close {
+.modal--open .filter__close {
   display: flex;
+}
+
+.filter__close svg {
+  pointer-events: none;
 }

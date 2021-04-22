@@ -28,34 +28,6 @@
       type="font/woff2"
       crossorigin
     />
-
-    <!-- Pixel Glass -->
-    <style>
-      html {
-        /* Mobile layout by default */
-        background-image: url("./img/pixel-glass/page-product-mobile.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-      }
-      /* Tablet */
-      @media (min-width: 768px) {
-        html {
-          /* Tablet layout */
-          background-image: url("./img/pixel-glass/page-product-tablet.jpg");
-        }
-      }
-      /* Desktop */
-      @media (min-width: 1024px) {
-        html {
-          /* Desktop layout */
-          background-image: url("./img/pixel-glass/page-product-desktop.jpg");
-        }
-      }
-
-    </style>
-    <link href="./pixel-glass/styles.css" rel="stylesheet" />
-    <script src="./pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="header">
@@ -79,7 +51,13 @@
           </div>
         </form>
 
-        <a href="./login.html" class="header__login">Login</a>
+        <a
+          href="./login.html"
+          class="header__login"
+          data-control="modal"
+          data-open="modal-login"
+          >Login</a
+        >
 
         <ul class="categories">
           <li class="categories__item">
@@ -154,7 +132,13 @@
               <dd>18” / 20”</dd>
             </div>
           </dl>
-          <button class="detail__button" type="button">Add to cart</button>
+          <a
+            href="./add.html"
+            class="detail__button"
+            data-control="modal"
+            data-open="modal-add"
+            >Add to cart</a
+          >
           <footer class="detail__footer">
             <p>14 day returns</p>
             <p>2-Year warranty</p>
@@ -812,7 +796,125 @@
         </ul>
       </section>
     </footer>
-    <div class="overlay overlay--close"></div>
+
+    <div class="modal" id="modal-login">
+      <section class="modal__popup login">
+        <h2>Log in</h2>
+        <form
+          class="login__form"
+          action="https://echo.htmlacademy.ru"
+          method="POST"
+        >
+          <div class="login__container">
+            <div class="login__field field">
+              <input
+                type="email"
+                name="login-email"
+                id="login-email"
+                placeholder="Your E-mail"
+                required
+              />
+              <label class="visually-hidden" for="login-email">
+                Enter your E-mail
+              </label>
+            </div>
+            <div class="login__field field">
+              <input
+                type="password"
+                name="login-password"
+                id="login-password"
+                placeholder="Password"
+                required
+              />
+              <label class="visually-hidden" for="login-password">
+                Enter your password
+              </label>
+              <a href="#">Forgot your password?</a>
+            </div>
+
+            <button class="login__button" type="submit">Log in</button>
+
+            <p class="login__help">
+              <span>Don’t have an account?</span>
+              <a href="#">Sign up</a>
+            </p>
+          </div>
+        </form>
+        <button class="modal__close login__close" type="button">
+          <span class="visually-hidden">Close login popup</span>
+          <svg width="14" height="14">
+            <use href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </section>
+    </div>
+    <div class="modal" id="modal-add">
+      <section class="modal__popup add">
+        <div class="add__wrap">
+          <h2>The item was added to your cart</h2>
+          <div class="add__cart-item cart-item">
+            <figure>
+              <div class="cart-item__image">
+                <picture>
+                  <!-- webp -->
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/cart-necklace-detail.webp    1x,
+                      ./img/cart-necklace-detail@2x.webp 2x
+                    "
+                  />
+                  <!-- 1x: 89px ; 2x: 178px -->
+                  <img
+                    src="./img/cart-necklace-detail.jpg"
+                    srcset="./img/cart-necklace-detail2x.jpg 2x"
+                    alt="Gold Necklace"
+                    width="89"
+                    height="79"
+                  />
+                </picture>
+              </div>
+              <figcaption>
+                <h3>Gold Necklace</h3>
+                <p>$ 115</p>
+              </figcaption>
+            </figure>
+            <div class="cart-item__counter counter">
+              <input type="number" id="counter" value="1" min="1" />
+              <label class="visually-hidden" for="counter"
+                >Enter the number of product you want to purchase</label
+              >
+              <button class="counter__add" type="button">
+                <span class="visually-hidden"
+                  >Add one more item in the cart</span
+                >
+              </button>
+              <button class="counter__sub" type="button">
+                <span class="visually-hidden"
+                  >Subtract one item from the cart</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="add__info">
+            <p>You have <span class="add__count">1</span> item in the cart</p>
+            <p>Cart subtotal: $<span class="add__total">115</span></p>
+          </div>
+          <div class="add__buttons">
+            <a href="./catalog.html">Continue shopping</a>
+            <a href="./cart.html">Checkout</a>
+          </div>
+        </footer>
+        <button class="modal__close add__close" type="button">
+          <span class="visually-hidden">Close login popup</span>
+          <svg width="14" height="14">
+            <use href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </section>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

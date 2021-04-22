@@ -36,7 +36,7 @@ gulp.task(`css`, function () {
 
 gulp.task(`js`, function () {
   return gulp
-    .src(`source/js/test.js`)
+    .src(`source/js/menu.js`)
     .pipe(gulpWebpack(require("./webpack.config"), webpack))
     .pipe(gulp.dest(`build/js`));
 });

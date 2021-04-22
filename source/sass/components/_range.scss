@@ -40,12 +40,7 @@
   display: grid;
   width: 100%;
 
-  background: linear-gradient(
-  to bottom,
-  transparent 7px,
-  var(--bg-range) 8px,
-  transparent 9px
-  );
+  background: linear-gradient(to bottom, transparent 7px, var(--bg-range) 8px, transparent 9px);
   background-color: transparent;
 
   --diff: calc(var(--max-value) - var(--min-value));

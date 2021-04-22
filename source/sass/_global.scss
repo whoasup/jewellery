@@ -19,5 +19,7 @@ img {
 }
 
 .no-scroll {
-  overflow: hidden;
+  position: fixed;
+
+  overflow: scroll;
 }
