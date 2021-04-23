@@ -81,7 +81,7 @@
   display: flex;
 }
 
-.blog__item:nth-child(3) {
+.blog__item:nth-child(3n) {
   grid-column: 2/3;
   grid-row: 1/3;
 

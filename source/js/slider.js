@@ -3,8 +3,8 @@
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
 (() => {
-  const newSlider = document.querySelector(`#new-slider`);
-  const detailSlider = document.querySelector(`#detail-slider`);
+  const newSlider = document.querySelector("#new-slider");
+  const detailSlider = document.querySelector("#detail-slider");
 
   const updateSlidesInfo = (slider, infoElement) => {
     const info = slider.getInfo();
@@ -12,8 +12,8 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
   };
 
   if (newSlider) {
-    const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
-    newSlider.classList.remove(`new-slider__list--no-js`);
+    const newSliderInfoCurrent = document.querySelector(".new-slider__current");
+    newSlider.classList.remove("new-slider__list--no-js");
     const mainSlider = new tns({
       container: ".new-slider__list",
       gutter: 30,
@@ -44,14 +44,14 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
     });
 
     updateSlidesInfo(mainSlider, newSliderInfoCurrent);
-    mainSlider.events.on(`touchEnd`, () => {
+    mainSlider.events.on("touchEnd", () => {
       updateSlidesInfo(mainSlider, newSliderInfoCurrent);
     });
   }
 
   if (detailSlider) {
-    const cardSliderInfoCurrent = document.querySelector(`.detail__current`);
-    detailSlider.classList.remove(`detail__gallery--no-js`);
+    const cardSliderInfoCurrent = document.querySelector(".detail__current");
+    detailSlider.classList.remove("detail__gallery--no-js");
     const cardSlider = new tns({
       container: ".detail__gallery",
       disable: true,
@@ -68,7 +68,7 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
     });
 
     updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
-    cardSlider.events.on(`touchEnd`, () => {
+    cardSlider.events.on("touchEnd", () => {
       updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
     });
   }

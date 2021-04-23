@@ -139,7 +139,7 @@
   }
 }
 
-:nth-child(3) ~ .new-slider__number {
+:nth-child(6n + 3) ~ .new-slider__number {
   display: none;
 
   @media #{$tablet} {

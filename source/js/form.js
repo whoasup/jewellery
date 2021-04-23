@@ -1,20 +1,20 @@
 "use strict";
 
 (() => {
-  const loginForm = document.querySelector(`#login-form`);
-  const emailInput = loginForm.querySelector(`#login-email`);
+  const loginForm = document.querySelector("#login-form");
+  const emailInput = loginForm.querySelector("#login-email");
 
   let isStorageSupport = true;
   try {
-    localStorage.setItem(`__test`, `data`);
+    localStorage.setItem("__test", "data");
   } catch (error) {
     isStorageSupport = false;
   }
 
   if (loginForm && emailInput) {
-    loginForm.addEventListener(`submit`, () => {
+    loginForm.addEventListener("submit", () => {
       if (isStorageSupport) {
-        localStorage.setItem(`email`, emailInput.value);
+        localStorage.setItem("email", emailInput.value);
       }
     });
   }
