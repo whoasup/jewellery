@@ -3915,29 +3915,29 @@ var __webpack_exports__ = {};
 
 
 (() => {
-  const page = document.querySelector(`.page`);
-  const body = document.querySelector(`body`);
-  const burger = document.querySelector(`.burger`);
-  const header = document.querySelector(`.header`);
-  let isMenuShow = header.classList.contains(`header--brown`);
+  const page = document.querySelector(".page");
+  const body = document.querySelector("body");
+  const burger = document.querySelector(".burger");
+  const header = document.querySelector(".header");
+  let isMenuShow = header.classList.contains("header--brown");
 
-  page.classList.add(`js`);
+  page.classList.add("js");
   const toggleMenu = () => {
     if (!isMenuShow) {
-      burger.classList.add(`burger--white`);
-      header.classList.add(`header--brown`);
-      header.classList.add(`header--show`);
-      body.classList.add(`no-scroll`);
+      burger.classList.add("burger--white");
+      header.classList.add("header--brown");
+      header.classList.add("header--show");
+      body.classList.add("no-scroll");
     } else {
-      burger.classList.remove(`burger--white`);
-      header.classList.remove(`header--brown`);
-      header.classList.remove(`header--show`);
-      body.classList.remove(`no-scroll`);
+      burger.classList.remove("burger--white");
+      header.classList.remove("header--brown");
+      header.classList.remove("header--show");
+      body.classList.remove("no-scroll");
     }
     isMenuShow = !isMenuShow;
   };
 
-  burger.addEventListener(`click`, () => {
+  burger.addEventListener("click", () => {
     toggleMenu();
   });
 })();
@@ -3956,8 +3956,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const newSlider = document.querySelector(`#new-slider`);
-  const detailSlider = document.querySelector(`#detail-slider`);
+  const newSlider = document.querySelector("#new-slider");
+  const detailSlider = document.querySelector("#detail-slider");
 
   const updateSlidesInfo = (slider, infoElement) => {
     const info = slider.getInfo();
@@ -3965,8 +3965,8 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   if (newSlider) {
-    const newSliderInfoCurrent = document.querySelector(`.new-slider__current`);
-    newSlider.classList.remove(`new-slider__list--no-js`);
+    const newSliderInfoCurrent = document.querySelector(".new-slider__current");
+    newSlider.classList.remove("new-slider__list--no-js");
     const mainSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
       container: ".new-slider__list",
       gutter: 30,
@@ -3997,14 +3997,14 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     updateSlidesInfo(mainSlider, newSliderInfoCurrent);
-    mainSlider.events.on(`touchEnd`, () => {
+    mainSlider.events.on("touchEnd", () => {
       updateSlidesInfo(mainSlider, newSliderInfoCurrent);
     });
   }
 
   if (detailSlider) {
-    const cardSliderInfoCurrent = document.querySelector(`.detail__current`);
-    detailSlider.classList.remove(`detail__gallery--no-js`);
+    const cardSliderInfoCurrent = document.querySelector(".detail__current");
+    detailSlider.classList.remove("detail__gallery--no-js");
     const cardSlider = new _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns({
       container: ".detail__gallery",
       disable: true,
@@ -4021,7 +4021,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
-    cardSlider.events.on(`touchEnd`, () => {
+    cardSlider.events.on("touchEnd", () => {
       updateSlidesInfo(cardSlider, cardSliderInfoCurrent);
     });
   }
@@ -4036,24 +4036,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const accordion = document.querySelector(`.accordion`);
+  const accordion = document.querySelector(".accordion");
   if (accordion) {
-    const isAccordionFaq = accordion.classList.contains(`faq__list`);
+    const isAccordionFaq = accordion.classList.contains("faq__list");
     let openedTab;
 
     const closeTab = () => {
-      openedTab.classList.remove(`accordion__tab--open`);
+      openedTab.classList.remove("accordion__tab--open");
       openedTab = null;
     };
 
-    accordion.classList.add(`accordion--js`);
-    accordion.addEventListener(`click`, (e) => {
+    accordion.classList.add("accordion--js");
+    accordion.addEventListener("click", (e) => {
       const target = e.target;
-      if (target.classList.contains(`accordion__button`)) {
+      if (target.classList.contains("accordion__button")) {
         if (isAccordionFaq && openedTab && target.parentElement !== openedTab) {
           closeTab();
         }
-        target.parentElement.classList.toggle(`accordion__tab--open`);
+        target.parentElement.classList.toggle("accordion__tab--open");
         openedTab = target.parentElement;
       }
     });
@@ -4069,14 +4069,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const range = document.querySelector(`.range`);
+  const range = document.querySelector(".range");
   if (range) {
     const onRangeInput = (e) => {
       let target = e.target;
-      target.parentNode.style.setProperty(`--${target.id}`, +target.value);
+      target.parentNode.style.setProperty("--" + target.id, +target.value);
     };
 
-    range.addEventListener(`input`, onRangeInput, false);
+    range.addEventListener("input", onRangeInput, false);
   }
 })();
 
@@ -4089,10 +4089,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const body = document.querySelector(`body`);
+  const body = document.querySelector("body");
 
-  const emailInput = document.querySelector(`#login-email`);
-  const modalLinks = Array.from(document.querySelectorAll(`[data-control="modal"]`));
+  const emailInput = document.querySelector("#login-email");
+  const modalLinks = Array.from(document.querySelectorAll("[data-control='modal']"));
   let openedModal;
 
   const openModal = (modal) => {
@@ -4101,32 +4101,32 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     if (modal) {
-      modal.classList.add(`modal--open`);
-      body.classList.add(`no-scroll`);
+      modal.classList.add("modal--open");
+      body.classList.add("no-scroll");
 
       openedModal = modal;
-      document.addEventListener(`keydown`, modalCloseHandler);
-      document.addEventListener(`click`, modalCloseHandler);
-      if (modal.id === `modal-login`) {
+      document.addEventListener("keydown", modalCloseHandler);
+      document.addEventListener("click", modalCloseHandler);
+      if (modal.id === "modal-login") {
         emailInput.focus();
       }
     }
   };
 
   const closeModal = (modal) => {
-    modal.classList.remove(`modal--open`);
-    body.classList.remove(`no-scroll`);
+    modal.classList.remove("modal--open");
+    body.classList.remove("no-scroll");
 
-    document.removeEventListener(`keydown`, modalCloseHandler);
-    document.removeEventListener(`click`, modalCloseHandler);
+    document.removeEventListener("keydown", modalCloseHandler);
+    document.removeEventListener("click", modalCloseHandler);
   };
 
   const modalCloseHandler = (e) => {
     const target = e.target;
     if (
-      target.classList.contains(`modal`) ||
-      target.classList.contains(`modal__close`) ||
-      e.key === `Escape`
+      target.classList.contains("modal") ||
+      target.classList.contains("modal__close") ||
+      e.key === "Escape"
     ) {
       closeModal(openedModal);
       openedModal = null;
@@ -4135,8 +4135,8 @@ __webpack_require__.r(__webpack_exports__);
 
   modalLinks.forEach((link) => {
     const modalClass = link.dataset.open;
-    const modalElement = document.querySelector(`#${modalClass}`);
-    link.addEventListener(`click`, (e) => {
+    const modalElement = document.querySelector("#" + modalClass);
+    link.addEventListener("click", (e) => {
       e.preventDefault();
 
       openModal(modalElement);
@@ -4153,20 +4153,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (() => {
-  const loginForm = document.querySelector(`#login-form`);
-  const emailInput = loginForm.querySelector(`#login-email`);
+  const loginForm = document.querySelector("#login-form");
+  const emailInput = loginForm.querySelector("#login-email");
 
   let isStorageSupport = true;
   try {
-    localStorage.setItem(`__test`, `data`);
+    localStorage.setItem("__test", "data");
   } catch (error) {
     isStorageSupport = false;
   }
 
   if (loginForm && emailInput) {
-    loginForm.addEventListener(`submit`, () => {
+    loginForm.addEventListener("submit", () => {
       if (isStorageSupport) {
-        localStorage.setItem(`email`, emailInput.value);
+        localStorage.setItem("email", emailInput.value);
       }
     });
   }

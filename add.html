@@ -1,232 +1,235 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Jewellery, login">
-    <title>Jewellery, login</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
-  </head>
-  <body>
-    <header class="header">
-      <a href="./index.html" class="header__logo logo">
-        <p class="visually-hidden">Jewellery shop</p>
-        <svg width="66" height="66">
-          <use href="img/sprite_auto.svg#icon-logo"></use>
-        </svg>
-      </a>
 
-      <nav class="header__navigation" id="menu">
-        <form action="#" class="header__search" method="POST">
-          <div class="search">
-            <label for="search">
-              <svg width="14" height="14">
-                <use href="img/sprite_auto.svg#icon-search"></use>
-              </svg>
-              <span class="visually-hidden">Search on the site</span></label>
-            <input type="text" id="search" placeholder="Type here to search">
-          </div>
-        </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Jewellery, login">
+  <title>Jewellery, login</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+</head>
 
-        <a href="./login.html" class="header__login">Login</a>
+<body>
+  <header class="header">
+    <a href="./index.html" class="header__logo logo">
+      <p class="visually-hidden">Jewellery shop</p>
+      <svg width="66" height="66">
+        <use href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+    </a>
 
-        <ul class="categories">
-          <li class="categories__item">
-            <a href="#" class="categories__link">What’s new</a>
-          </li>
-          <li class="categories__item">
-            <a href="./catalog.html#chokers" class="categories__link">Chokers</a>
-          </li>
-          <li class="categories__item">
-            <a href="#" class="categories__link">Necklaces</a>
-          </li>
-          <li class="categories__item">
-            <a href="#" class="categories__link">Rings</a>
-          </li>
-          <li class="categories__item">
-            <a href="#" class="categories__link">Earrings</a>
-          </li>
-        </ul>
-        <ul class="extra">
-          <li class="extra__item">
-            <a href="#" class="extra__link">About CH</a>
-          </li>
-          <li class="extra__item">
-            <a href="#" class="extra__link">Stores & Hours</a>
-          </li>
-          <li class="extra__item">
-            <a href="#" class="extra__link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="header__navigation" id="menu">
+      <form action="#" class="header__search" method="POST">
+        <div class="search">
+          <label for="search">
+            <svg width="14" height="14">
+              <use href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Search on the site</span></label>
+          <input type="text" id="search" placeholder="Type here to search">
+        </div>
+      </form>
 
-      <a href="#" class="header__cart cart">
-        <svg class="cart__icon" width="20" height="18">
-          <use href="img/sprite_auto.svg#icon-cart"></use>
-        </svg>
-        <p>Cart <span>0</span></p>
-      </a>
+      <a href="./login.html" class="header__login">Login</a>
 
-      <button class="header__burger burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-        <svg width="25" height="18">
-          <use href="./img/sprite_auto.svg#icon-burger"></use>
-        </svg>
-      </button>
-    </header>
-    <main>
-      <h1 class="visually-hidden">The item was added to your cart</h1>
-      <section class="modal__popup add">
-        <div class="add__wrap">
-          <h2>The item was added to your cart</h2>
-          <div class="add__cart-item cart-item">
-            <figure>
-              <div class="cart-item__image">
-                <picture>
-                  <!-- webp -->
-                  <source type="image/webp" srcset="
+      <ul class="categories">
+        <li class="categories__item">
+          <a href="#" class="categories__link">What’s new</a>
+        </li>
+        <li class="categories__item">
+          <a href="./catalog.html#chokers" class="categories__link">Chokers</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Necklaces</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Rings</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Earrings</a>
+        </li>
+      </ul>
+      <ul class="extra">
+        <li class="extra__item">
+          <a href="#" class="extra__link">About CH</a>
+        </li>
+        <li class="extra__item">
+          <a href="#" class="extra__link">Stores & Hours</a>
+        </li>
+        <li class="extra__item">
+          <a href="#" class="extra__link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#" class="header__cart cart">
+      <svg class="cart__icon" width="20" height="18">
+        <use href="img/sprite_auto.svg#icon-cart"></use>
+      </svg>
+      <p>Cart <span>0</span></p>
+    </a>
+
+    <button class="header__burger burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <svg width="25" height="18">
+        <use href="./img/sprite_auto.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </header>
+  <main>
+    <h1 class="visually-hidden">The item was added to your cart</h1>
+    <section class="modal__popup add">
+      <div class="add__wrap">
+        <h2>The item was added to your cart</h2>
+        <div class="add__cart-item cart-item">
+          <figure>
+            <div class="cart-item__image">
+              <picture>
+                <!-- webp -->
+                <source type="image/webp" srcset="
                       ./img/cart-necklace-detail.webp    1x,
                       ./img/cart-necklace-detail@2x.webp 2x
                     ">
-                  <!-- 1x: 89px ; 2x: 178px -->
-                  <img src="./img/cart-necklace-detail.jpg" srcset="./img/cart-necklace-detail2x.jpg 2x" alt="Gold Necklace" width="89" height="79">
-                </picture>
-              </div>
-              <figcaption>
-                <h3>Gold Necklace</h3>
-                <p>$ 115</p>
-              </figcaption>
-            </figure>
-            <div class="cart-item__counter counter">
-              <input type="number" id="counter" value="1" min="1">
-              <label class="visually-hidden" for="counter">Enter the number of product you want to purchase</label>
-              <button class="counter__add" type="button">
-                <span class="visually-hidden">Add one more item in the cart</span>
-              </button>
-              <button class="counter__sub" type="button">
-                <span class="visually-hidden">Subtract one item from the cart</span>
-              </button>
+                <!-- 1x: 89px ; 2x: 178px -->
+                <img src="./img/cart-necklace-detail.jpg" srcset="./img/cart-necklace-detail2x.jpg 2x" alt="Gold Necklace" width="89" height="79">
+              </picture>
             </div>
-          </div>
-        </div>
-        <footer>
-          <div class="add__info">
-            <p>You have <span class="add__count">1</span> item in the cart</p>
-            <p>Cart subtotal: $<span class="add__total">115</span></p>
-          </div>
-          <div class="add__buttons">
-            <a href="./catalog.html">Continue shopping</a>
-            <a href="./cart.html">Checkout</a>
-          </div>
-        </footer>
-        <button class="modal__close add__close" type="button">
-          <span class="visually-hidden">Close login popup</span>
-          <svg width="14" height="14">
-            <use href="img/sprite_auto.svg#icon-cross"></use>
-          </svg>
-        </button>
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="footer__sign-up sign-up">
-        <h2>The good stuff in your inbox</h2>
-        <p>News and updates from CH. No spam, we promise.</p>
-        <form action="#" class="sign-up__form sign-form" method="POST">
-          <div class="sign-form__container">
-            <label for="sign-up">
-              <span class="visually-hidden">Enter your email</span></label>
-            <input type="email" id="sign-up" placeholder="Your E-mail">
-            <button class="sign-form__button" type="submit">
-              <span>Sign Up</span><svg width="30" height="11" aria-hidden="true">
-                <use href="./img/sprite_auto.svg#icon-arrow-right"></use>
-              </svg>
+            <figcaption>
+              <h3>Gold Necklace</h3>
+              <p>$ 115</p>
+            </figcaption>
+          </figure>
+          <div class="cart-item__counter counter">
+            <input type="number" id="counter" value="1" min="1">
+            <label class="visually-hidden" for="counter">Enter the number of product you want to purchase</label>
+            <button class="counter__add" type="button">
+              <span class="visually-hidden">Add one more item in the cart</span>
+            </button>
+            <button class="counter__sub" type="button">
+              <span class="visually-hidden">Subtract one item from the cart</span>
             </button>
           </div>
-        </form>
-      </section>
+        </div>
+      </div>
+      <footer>
+        <div class="add__info">
+          <p>You have <span class="add__count">1</span> item in the cart</p>
+          <p>Cart subtotal: $<span class="add__total">115</span></p>
+        </div>
+        <div class="add__buttons">
+          <a href="./catalog.html">Continue shopping</a>
+          <a href="./cart.html">Checkout</a>
+        </div>
+      </footer>
+      <button class="modal__close add__close" type="button">
+        <span class="visually-hidden">Close login popup</span>
+        <svg width="14" height="14">
+          <use href="img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__sign-up sign-up">
+      <h2>The good stuff in your inbox</h2>
+      <p>News and updates from CH. No spam, we promise.</p>
+      <form action="#" class="sign-up__form sign-form" method="POST">
+        <div class="sign-form__container">
+          <label for="sign-up">
+            <span class="visually-hidden">Enter your email</span></label>
+          <input type="email" id="sign-up" placeholder="Your E-mail">
+          <button class="sign-form__button" type="submit">
+            <span>Sign Up</span><svg width="30" height="11" aria-hidden="true">
+              <use href="./img/sprite_auto.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
 
-      <section class="footer__helpful helpful">
-        <h2 class="visually-hidden">Helpful links</h2>
-        <ul class="helpful__list">
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Ordering & Payment</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Terms & Conditions</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Returns & Exchanges</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Delivery</a>
-          </li>
-        </ul>
-        <ul class="helpful__list">
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">About CH</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Stores & Hours</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Jobs</a>
-          </li>
-          <li class="helpful__item">
-            <a href="#" class="helpful__link">Contact Us</a>
-          </li>
-        </ul>
-      </section>
+    <section class="footer__helpful helpful">
+      <h2 class="visually-hidden">Helpful links</h2>
+      <ul class="helpful__list">
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Ordering & Payment</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Terms & Conditions</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Returns & Exchanges</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Delivery</a>
+        </li>
+      </ul>
+      <ul class="helpful__list">
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">About CH</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Stores & Hours</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Jobs</a>
+        </li>
+        <li class="helpful__item">
+          <a href="#" class="helpful__link">Contact Us</a>
+        </li>
+      </ul>
+    </section>
 
-      <section class="footer__socials socials">
-        <h2 class="visually-hidden">
-          You can find us in the following social networks
-        </h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a href="#" class="socials__link">
-              <div class="social">
-                <svg width="8" height="15">
-                  <use href="./img/sprite_auto.svg#icon-fb"></use>
-                </svg>
-                <p>Facebook</p>
-              </div>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link">
-              <div class="social">
-                <svg width="15" height="15">
-                  <use href="./img/sprite_auto.svg#icon-inst"></use>
-                </svg>
-                <p>Instagram</p>
-              </div>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link">
-              <div class="social">
-                <svg width="16" height="15">
-                  <use href="./img/sprite_auto.svg#icon-pint"></use>
-                </svg>
-                <p>Pinterest</p>
-              </div>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link">
-              <div class="social">
-                <svg width="15" height="13">
-                  <use href="./img/sprite_auto.svg#icon-tw"></use>
-                </svg>
-                <p>Twitter</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </footer>
-  </body>
+    <section class="footer__socials socials">
+      <h2 class="visually-hidden">
+        You can find us in the following social networks
+      </h2>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <div class="social">
+              <svg width="8" height="15">
+                <use href="./img/sprite_auto.svg#icon-fb"></use>
+              </svg>
+              <p>Facebook</p>
+            </div>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <div class="social">
+              <svg width="15" height="15">
+                <use href="./img/sprite_auto.svg#icon-inst"></use>
+              </svg>
+              <p>Instagram</p>
+            </div>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <div class="social">
+              <svg width="16" height="15">
+                <use href="./img/sprite_auto.svg#icon-pint"></use>
+              </svg>
+              <p>Pinterest</p>
+            </div>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <div class="social">
+              <svg width="15" height="13">
+                <use href="./img/sprite_auto.svg#icon-tw"></use>
+              </svg>
+              <p>Twitter</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+
 </html>
