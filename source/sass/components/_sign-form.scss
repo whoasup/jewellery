@@ -7,18 +7,27 @@
 
 .sign-form__container input {
   width: 100%;
-  margin-right: 10px;
   padding: 5px 0;
+  padding-right: 10px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  color: var(--basic-white);
 
   background-color: var(--bg-black);
   border: none;
 
   &::placeholder {
     color: var(--placeholder-grey);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--basic-black);
+
+    background-color: var(--basic-white);
+    outline: none;
   }
 }
 
@@ -36,6 +45,7 @@
 
   background-color: var(--bg-black);
   border: none;
+  cursor: pointer;
 
   &:focus,
   &:hover {

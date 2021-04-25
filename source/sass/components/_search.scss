@@ -11,9 +11,18 @@
 }
 
 .search label {
-  margin-right: 13px;
+  padding-right: 13px;
 
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .search input {
@@ -21,13 +30,19 @@
   font-size: 14px;
   line-height: 21px;
   font-family: inherit;
-  color: inherit;
+  color: var(--basic-black);
 
   background-color: transparent;
   border: none;
 
   &::placeholder {
     color: var(--placeholder-grey);
+  }
+
+  &:focus,
+  &:hover {
+    outline: 2px solid var(--basic-black);
+    outline-offset: 3px;
   }
 
   @media #{$tablet} {

@@ -12,6 +12,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  color: var(--basic-black);
 
   background-color: var(--bg-beige);
   border: none;
@@ -20,6 +21,12 @@
 
   &::placeholder {
     color: var(--placeholder-grey);
+  }
+
+  &:focus,
+  &:hover {
+    outline: 2px solid var(--basic-black);
+    outline-offset: 3px;
   }
 }
 
