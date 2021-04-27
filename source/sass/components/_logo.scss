@@ -1,11 +1,9 @@
 .logo {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 
   color: var(--basic-brown);
-
-  grid-template-areas: "logo";
 }
 
 .logo a {
@@ -23,7 +21,6 @@
   width: 100%;
   height: auto;
 
-  grid-area: logo;
   object-fit: cover;
 }
 

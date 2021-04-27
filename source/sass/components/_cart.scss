@@ -8,6 +8,17 @@
   }
 }
 
+.cart a {
+  &:focus,
+  &:hover {
+    color: var(--placeholder-grey);
+  }
+
+  &:active {
+    color: var(--basic-black);
+  }
+}
+
 .cart p {
   @media #{$tablet} {
     display: none;
