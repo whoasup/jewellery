@@ -4,6 +4,7 @@
   position: relative;
 
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -233,8 +234,4 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-.header--brown svg {
-  fill: var(--basic-white);
 }
