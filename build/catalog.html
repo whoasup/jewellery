@@ -15,12 +15,14 @@
 
 <body>
   <header class="header">
-    <a href="./index.html" class="header__logo logo">
-      <p class="visually-hidden">Jewellery shop</p>
-      <svg width="66" height="66">
-        <use href="img/sprite_auto.svg#icon-logo"></use>
-      </svg>
-    </a>
+    <div class="header__logo logo">
+      <a href="./index.html">
+        <p class="visually-hidden">Jewellery shop</p>
+        <svg width="66" height="66">
+          <use href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
 
     <nav class="header__navigation" id="menu">
       <form action="#" class="header__search" method="POST">
@@ -29,19 +31,20 @@
             <svg width="14" height="14">
               <use href="img/sprite_auto.svg#icon-search"></use>
             </svg>
-            <span class="visually-hidden">Search on the site</span></label>
+            <span class="visually-hidden">Search on the site</span>
+          </label>
           <input type="text" id="search" placeholder="Type here to search">
         </div>
       </form>
 
-      <a href="./login.html" class="header__login" data-control="modal" data-open="modal-login">Login</a>
+
 
       <ul class="categories">
         <li class="categories__item">
           <a href="#" class="categories__link">What’s new</a>
         </li>
         <li class="categories__item">
-          <a href="#" class="categories__link">Chokers</a>
+          <a href="./catalog.html#chokers" class="categories__link">Chokers</a>
         </li>
         <li class="categories__item">
           <a href="#" class="categories__link">Necklaces</a>
@@ -66,12 +69,20 @@
       </ul>
     </nav>
 
-    <a href="#" class="header__cart cart">
-      <svg class="cart__icon" width="20" height="18">
-        <use href="img/sprite_auto.svg#icon-cart"></use>
-      </svg>
-      <p>Cart <span>0</span></p>
-    </a>
+    <div class="header__login">
+      <a href="./login.html" data-control="modal" data-open="modal-login">
+        Login
+      </a>
+    </div>
+
+    <div class="header__cart cart">
+      <a href="#">
+        <svg class=" cart__icon" width="20" height="18">
+          <use href="img/sprite_auto.svg#icon-cart"></use>
+        </svg>
+        <p>Cart <span>0</span></p>
+      </a>
+    </div>
 
     <button class="header__burger burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
       <svg width="25" height="18">
@@ -97,6 +108,13 @@
           <div class="modal modal--filter" id="modal-filter">
             <form action="#" class="filter accordion modal__popup" method="POST">
               <div class="filter__container accordion__tab">
+                <button class="filter__accordion-button accordion__button" type="button" aria-hidden="true">
+                  <span class="visually-hidden">Open / Close accordion section</span>
+                  <svg width="17" height="10">
+                    <use class="accordion__icon accordion__icon--open" href="img/sprite_auto.svg#icon-arrow-down"></use>
+                    <use class="accordion__icon accordion__icon--close" href="img/sprite_auto.svg#icon-arrow-up"></use>
+                  </svg>
+                </button>
                 <fieldset>
                   <legend>
                     <h4>Product</h4>
@@ -128,6 +146,8 @@
                     </li>
                   </ul>
                 </fieldset>
+              </div>
+              <div class="filter__container accordion__tab">
                 <button class="filter__accordion-button accordion__button" type="button" aria-hidden="true">
                   <span class="visually-hidden">Open / Close accordion section</span>
                   <svg width="17" height="10">
@@ -135,8 +155,6 @@
                     <use class="accordion__icon accordion__icon--close" href="img/sprite_auto.svg#icon-arrow-up"></use>
                   </svg>
                 </button>
-              </div>
-              <div class="filter__container accordion__tab">
                 <fieldset>
                   <legend>
                     <h4>Material</h4>
@@ -156,6 +174,8 @@
                     </li>
                   </ul>
                 </fieldset>
+              </div>
+              <div class="filter__container accordion__tab">
                 <button class="filter__accordion-button accordion__button" type="button" aria-hidden="true">
                   <span class="visually-hidden">Open / Close accordion section</span>
                   <svg width="17" height="10">
@@ -163,8 +183,6 @@
                     <use class="accordion__icon accordion__icon--close" href="img/sprite_auto.svg#icon-arrow-up"></use>
                   </svg>
                 </button>
-              </div>
-              <div class="filter__container accordion__tab">
                 <fieldset>
                   <legend>
                     <h4>Collection</h4>
@@ -184,6 +202,8 @@
                     </li>
                   </ul>
                 </fieldset>
+              </div>
+              <div class="filter__container accordion__tab">
                 <button class="filter__accordion-button accordion__button" type="button" aria-hidden="true">
                   <span class="visually-hidden">Open / Close accordion section</span>
                   <svg width="17" height="10">
@@ -191,8 +211,6 @@
                     <use class="accordion__icon accordion__icon--close" href="img/sprite_auto.svg#icon-arrow-up"></use>
                   </svg>
                 </button>
-              </div>
-              <div class="filter__container accordion__tab">
                 <fieldset>
                   <legend>
                     <h4>Price</h4>
@@ -212,13 +230,6 @@
                     </div>
                   </div>
                 </fieldset>
-                <button class="filter__accordion-button accordion__button" type="button" aria-hidden="true">
-                  <span class="visually-hidden">Open / Close accordion section</span>
-                  <svg width="17" height="10">
-                    <use class="accordion__icon accordion__icon--open" href="img/sprite_auto.svg#icon-arrow-down"></use>
-                    <use class="accordion__icon accordion__icon--close" href="img/sprite_auto.svg#icon-arrow-up"></use>
-                  </svg>
-                </button>
               </div>
               <button class="filter__button" type="submit">Apply</button>
               <button class="filter__button filter__button--white" type="reset">

@@ -6,7 +6,9 @@
   color: var(--basic-brown);
 
   grid-template-areas: "logo";
+}
 
+.logo a {
   &:hover,
   &:focus {
     opacity: 0.5;

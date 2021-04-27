@@ -5,6 +5,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0 Max(45px, calc(50% - 585px));
   padding-top: 30px;
@@ -17,12 +18,10 @@
 
   &::after {
     content: "";
-    position: absolute;
-    top: 115px;
-    right: 0;
-    left: 0;
 
+    width: 100%;
     height: 1px;
+    margin-top: 20px;
 
     background-color: var(--border-grey);
 
@@ -32,10 +31,8 @@
   }
 
   @media #{$tablet} {
-    display: grid;
+    display: block;
     padding-bottom: 30px;
-
-    grid-template-rows: min-content auto;
 
     &--brown {
       background-color: var(--basic-brown);
@@ -48,9 +45,18 @@
 }
 
 .header__logo {
+  margin: 0 auto;
+  padding-left: 190px;
+
+  @media #{$tablet} {
+    margin: 0 30px;
+    padding-left: 0;
+  }
+}
+
+.header__logo a {
   width: 66px;
   height: 66px;
-  margin: 0 auto;
 
   @media #{$mobile} {
     width: 52px;
@@ -76,10 +82,18 @@
 
 .header__login,
 .header__cart {
-  position: absolute;
+  margin-top: 12px;
+}
 
+.header__login a,
+.header__cart a {
   font-size: 14px;
   line-height: 21px;
+
+  @media #{$tablet} {
+    font-size: 18px;
+    line-height: 23px;
+  }
 
   &:focus,
   &:hover {
@@ -92,27 +106,26 @@
 }
 
 .header__login {
-  top: 42px;
-  right: 180px;
+  margin-left: 70px;
 
   @media #{$tablet} {
-    position: unset;
-
     order: 1;
     align-self: flex-start;
-
-    font-size: 18px;
-    line-height: 23px;
+    margin: 0;
   }
 }
 
 .header__cart {
-  top: 28px;
-  right: 100px;
+  margin-left: 40px;
+
 
   @media #{$tablet} {
+    position: absolute;
     top: 55px;
     right: 45px;
+
+    margin-top: 0;
+    margin-left: 0;
   }
 
   @media #{$mobile} {
@@ -121,10 +134,13 @@
   }
 }
 
+.header__cart p {
+  margin: 0;
+}
+
 .header__navigation {
   order: 1;
   width: 100%;
-  margin-top: 20px;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 10px;
@@ -166,13 +182,22 @@
   }
 }
 
+.js .header__login {
+  @media #{$tablet} {
+    display: none;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 45px;
+  }
+}
+
 .header--brown .header__navigation {
   display: flex;
 
   @media #{$tablet} {
+    align-self: start;
     padding: 0;
     padding-top: 40px;
-    padding-bottom: 45px;
 
     color: var(--basic-white);
 
@@ -180,7 +205,15 @@
   }
 
   @media #{$mobile} {
-    padding: 30px 0 30px;
+    padding: 30px 0 0;
+  }
+}
+
+.header--brown .header__login {
+  @media #{$tablet} {
+    display: unset;
+
+    color: var(--basic-white);
   }
 }
 
